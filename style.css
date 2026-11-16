@@ -1,0 +1,252 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #080d18;
+    color: white;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #101a2c;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #62d6c6;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #62d6c6;
+}
+
+/* Home Section */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.subtitle {
+    color: #62d6c6;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #62d6c6;
+}
+
+.hero h2 {
+    font-size: 21px;
+    color: #a5b2c7;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #b5bfd0;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #62d6c6;
+    color: #080d18;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* Profile Image */
+.hero-image img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #62d6c6;
+    box-shadow: 0 0 25px #62d6c655;
+}
+
+/* Common Sections */
+section:not(.hero) {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #62d6c6;
+}
+
+/* About */
+#about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    color: #b5bfd0;
+}
+
+/* Education */
+.education-card {
+    background: #101a2c;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 650px;
+    border-radius: 12px;
+    border: 1px solid #26364c;
+}
+
+.education-card h3 {
+    color: #62d6c6;
+    margin-bottom: 12px;
+}
+
+.education-card p {
+    color: #b5bfd0;
+    margin: 5px;
+}
+
+/* Certificate */
+.certificate-card {
+    background: #101a2c;
+    padding: 25px;
+    max-width: 650px;
+    margin: auto;
+    border-radius: 12px;
+    border: 1px solid #26364c;
+}
+
+.certificate-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.certificate-card h3 {
+    color: #62d6c6;
+    margin-bottom: 10px;
+}
+
+.certificate-card p {
+    color: #b5bfd0;
+    margin-bottom: 10px;
+}
+
+.certificate-card a {
+    display: inline-block;
+    color: #62d6c6;
+    margin-top: 15px;
+}
+
+/* Contact */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    padding: 13px 30px;
+    background: #101a2c;
+    border: 1px solid #62d6c6;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    background: #62d6c6;
+    color: #080d18;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #101a2c;
+    color: #a5b2c7;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 270px;
+    }
+
+    section:not(.hero) {
+        padding: 60px 6%;
+    }
+}
